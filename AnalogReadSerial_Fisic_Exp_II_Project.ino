@@ -50,7 +50,7 @@ void loop() {
   iluminancia = ((long)leituraLuz*A*10)/((long)B*Rc*(1024-leituraLuz));
 
  //UMIDADE
-  if(millis() - timer >= 6000)      // o sensor faz uma leitura a cada 2s
+  if(millis() - timer >= 5000)      // o sensor faz uma leitura a cada 5s
   {
     DHT.read22(A2);                 // chama método de leitura da classe dht,com o pino de transmissão de dados ligado no pino A2
     // print out the value you read:
